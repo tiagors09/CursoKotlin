@@ -85,4 +85,14 @@ fun main() {
     println(verdadeiro.and(falso))
     println(falso.and(verdadeiro))
     println(falso.and(falso))
+
+    val nameTiago: String = "Tiago"
+    val letraT: Char = 'T'
+    println(letraT)
+    println(letraT + 1)
+
+    for (letra: Char in nameTiago.toCharArray())
+        println((letra + 10).uppercase())
+
+    println(nameTiago.plus("Sla"))
 }
