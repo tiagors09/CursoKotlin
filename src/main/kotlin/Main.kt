@@ -87,12 +87,27 @@ fun main() {
     println(falso.and(falso))
 
     val nameTiago: String = "Tiago"
+    val qtdLetrasTiago = nameTiago.length.toString()
+    println("Quantidade de letras do nome $nameTiago: $qtdLetrasTiago")
     val letraT: Char = 'T'
     println(letraT)
     println(letraT + 1)
 
     for (letra: Char in nameTiago.toCharArray())
-        println((letra + 10).uppercase())
+        println(letra.inc().uppercase())
 
     println(nameTiago.plus("Sla"))
+
+    val welcome = """
+        Olá Tiago,
+        
+        Seu produto está pronto
+    """.replaceIndent(";")
+
+    println(welcome)
+
+    val nameUser = "Tiago"
+    val ageUser = 22
+
+    println("Hello $nameUser, you have ${ageUser.toString()} years old")
 }
